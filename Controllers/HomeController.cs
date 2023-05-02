@@ -20,8 +20,16 @@ namespace APi_Web_1.Controllers
         [HttpPost]
         public dynamic Crear(Persona persona)
         {
-            return Persona.Agregar(persona);
+            return Persona.AddPerson(persona);
         }
+
+        [Route("api/Persona/Listar")]
+        [HttpGet]
+        public dynamic GetPersonByName(string name)
+        {
+            return Persona.GetPersonByName(name);
+        }
+
 
     }
 }

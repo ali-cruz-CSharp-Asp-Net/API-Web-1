@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DetallesPersonaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Datos\DBDatos.cs" />
     <Compile Include="Datos\Parametro.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DetallesPersona.cs" />
     <Compile Include="Models\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
