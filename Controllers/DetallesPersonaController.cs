@@ -38,6 +38,7 @@ namespace APi_Web_1.Controllers
 
             foreach (var item in request.Headers)
             {
+                //if (request.Headers.Contains("Authorization"))
                 if (item.Key.Equals("Authorization"))
                 {
                     token = item.Value.First();
